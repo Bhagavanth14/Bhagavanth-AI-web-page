@@ -1,9 +1,9 @@
 <html>
 <head><center><h1><b style="color:white;">WELCOME TO THE PERSONALISED BHAGAVANTH AI ASSISTANT</b></h1></center>
 <style>body{
-background-image:url("images.jpeg");
+background-image:url("C:\\Users\\bhgub\\Pictures\\images.jpeg");
 background-size:cover;
-background-attached:fixed;
+background-attachment:fixed;
 background-position:center;
 background-repeat:no-repeat;}
 .description-container
@@ -11,6 +11,22 @@ background-repeat:no-repeat;}
 width: 56%;
 float: left;
 padding : 30px;
+}
+
+/* --- Mobile Format Layout Rules --- */
+@media (max-width: 768px) {
+    body {
+        /* Changes background behavior to fit vertical mobile screens without stretching awkwardly */
+        background-size: contain; 
+        background-position: top center;
+        background-attachment: scroll; /* Helps mobile performance while scrolling */
+        background-color: #0b0f19; /* Fills remaining screen space if the image doesn't cover the full mobile height */
+    }
+    .description-container {
+        width: 100%; /* Expands text layout to full width on mobile screens so it is easy to read */
+        float: none;
+        padding: 15px;
+    }
 }
 </style>
 </head>
